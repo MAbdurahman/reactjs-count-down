@@ -7,10 +7,10 @@ const COUNTDOWN_TARGET = new Date('2026-06-31T23:59:59');
 const getTimeLeft = () => {
 	const totalTimeLeft = COUNTDOWN_TARGET - new Date();
 	const days = Math.floor(totalTimeLeft / (1000 * 60 * 60 * 24));
-	const hours = Math.floor((totalTimeLeft / (1000 * 60 * 60)) % 24);
-	const minutes = Math.floor((totalTimeLeft / (1000 * 60)) % 60);
-	const seconds = Math.floor((totalTimeLeft / 1000) % 60);
-	return { days, hours, minutes, seconds };
+	const hrs = Math.floor((totalTimeLeft / (1000 * 60 * 60)) % 24);
+	const mins = Math.floor((totalTimeLeft / (1000 * 60)) % 60);
+	const secs = Math.floor((totalTimeLeft / 1000) % 60);
+	return { days, hrs, mins, secs };
 };
 
 export default function CountDownTimerComponent() {
@@ -28,7 +28,7 @@ export default function CountDownTimerComponent() {
 
 	return (
 		<div className='countdown'>
-			<h2>Countdown</h2>
+			<h2 className='countdown-heading'>Countdown</h2>
 			<div className='content'>
 				{Object.entries(timeLeft).map((el) => {
 					const label = el[0];

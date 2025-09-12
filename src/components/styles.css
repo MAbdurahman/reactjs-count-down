@@ -3,13 +3,18 @@
    display: flex;
    flex-direction: row;
    justify-content: center;
+   align-items: center;
    margin: auto;
    gap: 12px;
 }
 
-.countdown h2 {
-   margin-bottom: 20px;
-   font-size: 50px;
+.countdown-heading {
+   margin-bottom: 2em;
+   margin-top: 2em;
+   font-size: 64px;
+   font-weight: 800;
+   text-align: center;
+   text-transform: uppercase;
 }
 
 .countdown .box {
@@ -24,9 +29,10 @@
 
 .countdown .value {
    font-family: 'Roboto Mono', monospace;
-   font-size: 30px;
-   font-weight: 600;
+   font-size: 20px;
+   font-weight: 400;
    background-color: #144b40;
+   background-color: #263238;
    color: white;
    display: flex;
    justify-content: center;
@@ -36,6 +42,14 @@
    height: 80px;
    position: relative;
    box-shadow: -2px 0px 5px 1px #232423ad;
+}
+
+.countdown .label {
+   font-family: 'Roboto Mono', monospace;
+   font-weight: 900;
+   font-size: 1.5rem;
+   text-transform: uppercase;
+
 }
 
 @media screen and (min-width: 550px) {
@@ -57,9 +71,9 @@
 
 @media screen and (min-width: 790px) {
    .countdown .value {
-      font-size: 100px;
-      height: 200px;
-      width: 200px;
+      /* font-size: 100px; */
+      height: 150px;
+      width: 150px;
    }
 
    .countdown .box {
@@ -90,8 +104,9 @@
 }
 
 .countdown .label {
-   font-size: 20px;
-   font-weight: 100;
+   /* font-size: 20px; */
+   font-family: 'Roboto Mono', monospace;
+   font-weight: 700;
    letter-spacing: 4px;
    margin-top: 10px;
 }
