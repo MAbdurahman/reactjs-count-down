@@ -1,96 +1,98 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
-
 /*===============================================================
           Website Resets
 ==================================================================*/
 *,
 *::after,
 *::before {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  -o-user-select: none;
-  user-select: none;
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   -webkit-user-select: none;
+   -moz-user-select: none;
+   -ms-user-select: none;
+   -o-user-select: none;
+   user-select: none;
 }
 
 *::-moz-focus-inner {
-  border: 0;
+   border: 0;
 }
 
 *:focus {
-  outline: none;
+   outline: none;
 }
 
 /*===============================================================
           root, html, and body styles
 ==================================================================*/
 :root {
-  --color-grey-000: #000000;
-  --color-grey-100: #111111;
-  --color-grey-200: #222222;
-  --color-grey-300: #333333;
-  --color-grey-400: #444444;
-  --color-grey-500: #555555;
-  --color-grey-600: #666666;
-  --color-grey-700: #777777;
-  --color-grey-800: #888888;
-  --color-grey-900: #999999;
-  --color-grey-AAA: #aaaaaa;
-  --color-grey-BBB: #bbbbbb;
-  --color-grey-CCC: #cccccc;
-  --color-grey-DDD: #dddddd;
-  --color-grey-EEE: #eeeeee;
-  --color-grey-FFF: #ffffff;
+   --color-grey-000: #000000;
+   --color-grey-100: #111111;
+   --color-grey-200: #222222;
+   --color-grey-300: #333333;
+   --color-grey-400: #444444;
+   --color-grey-500: #555555;
+   --color-grey-600: #666666;
+   --color-grey-700: #777777;
+   --color-grey-800: #888888;
+   --color-grey-900: #999999;
+   --color-grey-AAA: #aaaaaa;
+   --color-grey-BBB: #bbbbbb;
+   --color-grey-CCC: #cccccc;
+   --color-grey-DDD: #dddddd;
+   --color-grey-EEE: #eeeeee;
+   --color-grey-FFF: #ffffff;
 
-  --font-family-primary: 'Roboto', sans-serif;
-  --font-family-monospace: 'Roboto Mono', monospace;
+   --font-family-primary: 'Roboto', sans-serif;
+   --font-family-monospace: 'Roboto Mono', monospace;
 }
 
 /*tablet landscape and desktop layout (960px or more) */
 @media only screen and (min-width: 960px) {
-  html {
-      font-size: 100%; }
+   html {
+      font-size: 100%;
+   }
 
 }
 
 /*table portrait layout (768px to 959px) */
 @media only screen and (max-width: 959px) {
-  html {
-  
-      font-size: 83.33%; }
+   html {
+      font-size: 83.33%;
+   }
 }
 
 /*mobile landscape layout (480px to 767px) */
 @media only screen and (max-width: 767px) {
-  html {
-  
-      font-size: 75%; }
+   html {
+      font-size: 75%;
+   }
 }
 
 /*mobile portrait layout (479px or less) */
 @media only screen and (max-width: 479px) {
-  html {
-  
-      font-size: 62.5%; }
+   html {
+      font-size: 62.5%;
+   }
 }
 
 body {
-  position: relative;
-  height: 100vh;
-  width: 100vw;
-  display: flex;
-  flex-direction: column;
-  font-family: var(--font-family-primary);
-  font-size: 1rem;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-  letter-spacing: 1px;
-  overflow-x: hidden;
+   position: relative;
+   height: 100vh;
+   width: 100vw;
+   padding-left: 8px;
+   padding-right: 8px;
+   display: flex;
+   flex-direction: column;
+   font-family: var(--font-family-primary);
+   font-size: 1rem;
+   font-optical-sizing: auto;
+   font-weight: 400;
+   font-style: normal;
+   letter-spacing: 1px;
+   overflow-x: hidden;
 
 }
 
@@ -99,46 +101,46 @@ h2,
 h3,
 h4,
 h5 {
-  margin: 3rem 0 1.38rem;
-  font-family: var(--font-family-primary);
-  font-weight: 400;
-  line-height: 1.5;
+   margin: 3rem 0 1.38rem;
+   font-family: var(--font-family-primary);
+   font-weight: 400;
+   line-height: 1.5;
 }
 
 h1 {
-  margin-top: 0;
-  font-size: 3rem;
-  font-weight: 700;
+   margin-top: 0;
+   font-size: 3rem;
+   font-weight: 700;
 }
 
 h2 {
-  font-size: 2rem;
+   font-size: 2rem;
 }
 
 h3 {
-  font-size: 1.9rem;
+   font-size: 1.9rem;
 }
 
 h4 {
-  font-size: 1.5rem;
+   font-size: 1.5rem;
 }
 
 h5 {
-  font-size: 1.25rem;
+   font-size: 1.25rem;
 }
 
 p {
-  margin-bottom: 1rem;
+   margin-bottom: 1rem;
 }
 
 
 .label {
-  font-family: var(--font-family-monospace);
-  font-weight: 700;
+   font-family: var(--font-family-monospace);
+   font-weight: 900;
 }
 
 .value span {
-  font-size: 3.5rem;
+   font-size: 3rem;
 }
 
 
@@ -149,16 +151,22 @@ p {
    justify-content: center;
    align-items: center;
    margin: auto;
-   gap: 12px;
+   gap: 0.5em;
 }
 
 .countdown-heading {
-   margin-bottom: 2em;
    margin-top: 2em;
-   font-size: 64px;
+   margin-bottom: -1em;
+   font-size: 4rem;
    font-weight: 800;
    text-align: center;
    text-transform: uppercase;
+}
+.countdown-subheading {
+   margin-bottom: 1em;
+   font-size: 3rem;
+   font-weight: 600;
+   text-align: center;
 }
 
 .countdown .box {
@@ -172,10 +180,9 @@ p {
 }
 
 .countdown .value {
-   font-family: 'Roboto Mono', monospace;
-   font-size: 20px;
+   font-family: var(--font-family-monospace);
+   font-size: 1.25rem;
    font-weight: 400;
-   background-color: #144b40;
    background-color: #263238;
    color: white;
    display: flex;
@@ -198,11 +205,11 @@ p {
 
 @media screen and (min-width: 550px) {
    .countdown .content {
-      gap: 30px;
+      gap: 1.33em;
    }
 
    .countdown .value {
-      font-size: 50px;
+
       width: 120px;
       height: 120px;
    }
@@ -215,7 +222,6 @@ p {
 
 @media screen and (min-width: 790px) {
    .countdown .value {
-      /* font-size: 100px; */
       height: 150px;
       width: 150px;
    }
@@ -226,30 +232,9 @@ p {
    }
 }
 
-.countdown .value::before {
-   content: "";
-   position: absolute;
-   width: 100%;
-   height: 1px;
-   z-index: 2;
-   background-color: #313131b0;
-   box-shadow: 0px 0px 5px 0px #2e2f2ed6;
-}
-
-.countdown .value::after {
-   content: "";
-   position: absolute;
-   z-index: 2;
-   left: -7px;
-   width: 10px;
-   height: 20px;
-   background-color: #969696;
-   box-shadow: inset -1px 1px 5px 1px #0e0e0ead;
-}
 
 .countdown .label {
-   /* font-size: 20px; */
-   font-family: 'Roboto Mono', monospace;
+   font-family: var(--font-family-monospace);
    font-weight: 700;
    letter-spacing: 4px;
    margin-top: 10px;
