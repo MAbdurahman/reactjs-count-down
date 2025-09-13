@@ -78,6 +78,13 @@
    }
 }
 
+/*mobile portrait layout (479px or less) */
+@media only screen and (max-width: 320px) {
+   html {
+      font-size: 50%;
+   }
+}
+
 body {
    position: relative;
    height: 100vh;
@@ -154,6 +161,16 @@ p {
    gap: 0.5em;
 }
 
+/*mobile portrait layout (320px or less) */
+@media only screen and (max-width: 320px) {
+   .countdown .content {
+      gap: 5em;
+      padding-left: 4px;
+      padding-right: 4px;
+
+   }
+}
+
 .countdown-heading {
    margin-top: 2em;
    margin-bottom: -1em;
@@ -179,6 +196,14 @@ p {
    max-width: 150px;
 }
 
+/*mobile portrait layout (320px or less) */
+@media only screen and (max-width: 320px) {
+  .countdown .box {
+     width: calc(100% / 8);
+
+  }
+}
+
 .countdown .value {
    font-family: var(--font-family-monospace);
    font-size: 1.25rem;
@@ -188,7 +213,7 @@ p {
    display: flex;
    justify-content: center;
    align-items: center;
-   border-radius: 8px;
+   border-radius: 5px;
    width: 80px;
    height: 80px;
    position: relative;
