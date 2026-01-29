@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from 'react';
 
-const COUNTDOWN_TARGET = new Date('2026-01-01T00:00:01');
+const COUNTDOWN_TARGET = new Date('2026-04-07T00:00:01');
 
 const getTimeLeft = () => {
 	const totalTimeLeft = COUNTDOWN_TARGET - new Date();
@@ -27,7 +27,7 @@ export default function CountDownTimerComponent() {
 	return (
 		<div className='countdown'>
 			<h2 className='countdown-heading'>Countdown</h2>
-         <h3 className='countdown-subheading'>Until New Year</h3>
+         <h3 className='countdown-subheading'>Until April 7, 2026</h3>
 			<div className='content'>
 				{Object.entries(timeLeft).map((el) => {
 					const label = el[0];
